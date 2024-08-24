@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Puzzle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="view" class="game-container">
+    <!-- Difficulty selection and start game button -->
+    <div id="startScreen" class="start-screen">
+      <h1>Select Difficulty</h1>
+      <select id="difficultySelect">
+        <option value="easy">Easy</option>
+        <option value="hard">Hard</option>
+        <option value="extreme">Extreme</option>
+        <option value="difficult">Difficult</option>
+      </select>
+      <button id="startGameBtn">Start Game</button>
+    </div>
+
+    <!-- Game elements -->
+    <canvas id="mazeCanvas"></canvas>
+      
+    <!-- Player and Goal Icons -->
+    <div id="player">😐</div>
+    <div id="goal">🏠</div>
+
+    <!-- Message container for game over -->
+    <div id="Message-Container" class="message-container">
+      <h1 id="moves">You moved X steps!</h1>
+      <button onclick="retryGame()">Retry</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
